@@ -152,7 +152,7 @@ h4{
 
 .Card{
     align-items: end;
-    background: url("/assets/images/Entrenamiento/card.png");
+    background: url("../assets/images/Entrenamiento/card.png");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +170,7 @@ h4{
 }
 
 .Card:hover{
-    background: url("/assets/images/Entrenamiento/cardhover.png");
+    background: url("../assets/images/Entrenamiento/cardhover.png");
     background-color: tomato;
     background-position: left;
     background-repeat: no-repeat;
