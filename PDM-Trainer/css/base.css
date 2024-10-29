@@ -28,6 +28,8 @@ h2{
 
 h3:not(#HComen){
     font-size: 1.8em;
+    margin: 0;
+    padding: 0;
 }
 
 h4{
@@ -108,6 +110,8 @@ h4{
 .Tittle{
     width: fit-content;
     height: fit-content;
+    margin: 0;
+    padding: 0;
 }
 
 .NavList{
@@ -147,37 +151,31 @@ h4{
 
 /* MAIN */
 .TittleCard{
-    width: 100%;
+    width: 90%;
+    margin: 10px 0 10px 0;
+    background: linear-gradient(to left,brown, black, brown);
 }
 
 .Card{
     align-items: end;
-    background: url("../assets/images/Entrenamiento/card.png");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
     border: 1px solid black;
     border-radius: 40px;
     cursor: pointer;
     display: flex;
-    filter: brightness(1.1);
     min-height: 30vh;
+    min-width: 20vw;
+    max-width: 20vw;
+    margin: auto;
     justify-content: center;
     margin-bottom: 10px;
-    mix-blend-mode: multiply;
     transition: 100ms;
-    min-width: 20vw;
+    background-size: cover;
+    background-position: center;
 }
 
 .Card:hover{
-    background: url("../assets/images/Entrenamiento/cardhover.png");
-    background-color: tomato;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
     box-shadow: 5px 5px 10px black, -5px -5px 10px black;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
+    transform: scale(1.1);
 }
 
 /* CONTAINER CARDS */
@@ -187,8 +185,37 @@ h4{
     justify-content: space-evenly;
     margin: auto;
     padding: 0;
+    gap: 20px;
     transition: 100ms;
     width: 100%;
+}
+
+.ContainerTP #plan30Dias{
+    background-image: url("../assets/images/Entrenamiento/desafio-30-dias.jpg");
+}
+
+.ContainerTP #planFullBody{
+    background-image: url("../assets/images/Entrenamiento/full-body.jpg");
+}
+
+.ContainerTP #planFullBody2{
+    background-image: url("../assets/images/Entrenamiento/full-body-2.jpg");
+}
+
+.ContainerTP #planPersBasic{
+    background-image: url("../assets/images/Entrenamiento/personalizado-basic.jpg");
+}
+
+.ContainerTP #planPersFull{
+    background-image: url("../assets/images/Entrenamiento/personalizado-full.jpg");
+}
+
+.ContainerTP #planPersPrem{
+    background-image: url("../assets/images/Entrenamiento/personalizado-premium.jpg");
+}
+
+.ContainerTP #planPersVip{
+    background-image: url("../assets/images/Entrenamiento/personalizado-vip.jpg");
 }
 
 /* ASIDE */
@@ -199,11 +226,13 @@ h4{
     text-align: center;
     max-width: 80%;
     margin: 30px 0 30px 0;
+    transition: 100ms;
 }
 
 .ExtraContent:hover{
     box-shadow: 5px 5px 10px black, -5px -5px 10px black;
     background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 
 /* FOOTER */
@@ -366,11 +395,16 @@ h4{
     .HiddenAll{
         z-index: -1;
     }
+
+    .Card{
+        min-width: 25vw;
+        min-height: 40vh;
+    }
 }
 
 @media screen and (max-width: 840px){
     .Card{
-        width: 40%;
+        min-width: 40vw;
     }
 
     .ExtraContent{
@@ -380,7 +414,8 @@ h4{
 
 @media screen and (max-width: 600px){
     .Card{
-        width: 50%;
+        min-width: 60vw;
+        min-height: 40vh;
     }
 
     .ExtraContent{
