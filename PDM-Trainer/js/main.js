@@ -47,4 +47,3 @@ itemD.addEventListener("click", () => {
   nav.classList.remove("visible");
 })
 
-
