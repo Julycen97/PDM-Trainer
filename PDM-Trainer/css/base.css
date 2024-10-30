@@ -38,7 +38,7 @@ h4{
 }
 
 /* SECTION'S CLASSES */
-.Header{
+.header{
     align-items: center;
     background-color: gray;
     border-radius: 0 0 15px 15px;
@@ -49,7 +49,7 @@ h4{
     padding: 2rem;
 }
 
-.Motivation{
+.motivation{
     background-color: tomato;
     border-radius: 15px 15px 15px 15px;
     display: flex;
@@ -60,12 +60,12 @@ h4{
     min-height: 60vh;
 }
 
-.VidMotivation{
+.vidMotivation{
     border-radius: 20px;
     min-width: 100%;
 }
 
-.Main{
+.main{
     background-color: brown;
     border-radius: 15px 15px 15px 15px;
     display: grid;
@@ -76,7 +76,7 @@ h4{
     text-align: center;
 }
 
-.Aside{
+.aside{
     align-items: center;
     background-color:teal;
     border-radius: 15px 15px 15px 15px;
@@ -89,14 +89,14 @@ h4{
     min-height: 40vh;
 }
 
-.Footer{
+.footer{
     background-color: gray;
     border-radius: 15px 15px 0 0;
     grid-area: F;
     min-height: 20vh;
 }
 
-.Container{
+.container{
     display: grid;
     gap: 5px;
     grid-template-areas: 
@@ -107,32 +107,32 @@ h4{
     "F F F F";
 }
 /* HEADER */
-.Tittle{
+.tittle{
     width: fit-content;
     height: fit-content;
     margin: 0;
     padding: 0;
 }
 
-.NavList{
+.navList{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     list-style-type: none;
 }
 
-.NavList li a{
+.navList li a{
     color: white;
     font-size: 1.5em;
     text-decoration: none;
     transition: 300ms;
 }
 
-.NavList li a:hover{
+.navList li a:hover{
     text-shadow: 2px 2px 10px black;
 }
 
-.AbrirMenu, .CerrarMenu{
+.openMenu, .closeMenu{
     border-radius: 15px ;
     border: none;
     cursor: pointer;
@@ -141,22 +141,22 @@ h4{
     width: 4em;
 }
 
-.AbrirMenu:hover{
+.openMenu:hover{
     box-shadow: 1px 1px 10px black, -1px -1px 10px black;
 }
 
-.CerrarMenu:hover{
+.closeMenu:hover{
     box-shadow: 1px 1px 10px white, -1px -1px 10px white;
 }
 
 /* MAIN */
-.TittleCard{
+.tittleCard{
     width: 90%;
     margin: 10px 0 10px 0;
     background: linear-gradient(to left,brown, black, brown);
 }
 
-.Card{
+.card{
     align-items: end;
     border: 1px solid black;
     border-radius: 40px;
@@ -173,13 +173,13 @@ h4{
     background-position: center;
 }
 
-.Card:hover{
+.card:hover{
     box-shadow: 5px 5px 10px black, -5px -5px 10px black;
     transform: scale(1.1);
 }
 
 /* CONTAINER CARDS */
-.ContainerTP{
+.containerCards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -190,36 +190,36 @@ h4{
     width: 100%;
 }
 
-.ContainerTP #plan30Dias{
+.containerCards #plan30Dias{
     background-image: url("../assets/images/Entrenamiento/desafio-30-dias.jpg");
 }
 
-.ContainerTP #planFullBody{
+.containerCards #planFullBody{
     background-image: url("../assets/images/Entrenamiento/full-body.jpg");
 }
 
-.ContainerTP #planFullBody2{
+.containerCards #planFullBody2{
     background-image: url("../assets/images/Entrenamiento/full-body-2.jpg");
 }
 
-.ContainerTP #planPersBasic{
+.containerCards #planPersBasic{
     background-image: url("../assets/images/Entrenamiento/personalizado-basic.jpg");
 }
 
-.ContainerTP #planPersFull{
+.containerCards #planPersFull{
     background-image: url("../assets/images/Entrenamiento/personalizado-full.jpg");
 }
 
-.ContainerTP #planPersPrem{
+.containerCards #planPersPrem{
     background-image: url("../assets/images/Entrenamiento/personalizado-premium.jpg");
 }
 
-.ContainerTP #planPersVip{
+.containerCards #planPersVip{
     background-image: url("../assets/images/Entrenamiento/personalizado-vip.jpg");
 }
 
 /* ASIDE */
-.ExtraContent{
+.extraContent{
     border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
     cursor: pointer;
@@ -229,30 +229,34 @@ h4{
     transition: 100ms;
 }
 
-.ExtraContent:hover{
+.extraContent:hover{
     box-shadow: 5px 5px 10px black, -5px -5px 10px black;
     background-color: rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
 }
 
 /* FOOTER */
-.Redes{
+.socialMedia{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.Redes div:first-child{
+.socialMedia div:first-child{
     width: 100%;
     padding-left: 10px;
 }
 
-.Redes div:not(div:first-child){
+.socialMedia div:not(div:first-child){
     padding-bottom: 20px;
 }
 
-.RedesContact{
+.socialMedia a{
+    display: flow-root;
+}
+
+.socialMediaContact{
     max-width: 7em;
     mix-blend-mode: multiply;
     filter: brightness(1.1);
@@ -261,16 +265,12 @@ h4{
     width: 7vw;
 }
 
-.Redes a{
-    display: flow-root;
-}
-
-.RedesContact:hover{
+.socialMediaContact:hover{
     width: 7.3vw;
 }
 
 /*COMENTARIOS*/
-.Comentarios{
+.coments{
     background-color:rgba(7, 7, 7, 0.687);
     border-radius: 15px 15px 15px 15px;
     color: white;
@@ -283,30 +283,30 @@ h4{
     width: 85vw;
 }
 
-.Comentarios p{
+.coments p{
     padding: 0;
     font-size: 1em;
 }
 
-.Comentarios div:first-child{
+.coments div:first-child{
     padding: 0;
     text-align: center;
     width: 100%;
 }
 
-.Comentarios div:nth-child(2){
+.coments div:nth-child(2){
     padding: 0;
     text-align: right;
     width: 49%;
 }
 
-.Comentarios div:nth-child(3){
+.coments div:nth-child(3){
     padding: 0;
     text-align: left;
     width: 49%;
 }
 
-.Comentarios button{
+.coments button{
     background: white;
     border-radius: 5px;
     color: black;
@@ -316,7 +316,7 @@ h4{
     transition: 300ms;
 }
 
-.Comentarios button:hover{
+.coments button:hover{
     background: black;
     box-shadow: 3px 3px 10px yellowgreen, -3px -3px 10px purple;
     color: white;
@@ -332,7 +332,7 @@ h4{
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1050px){
-    .Container{
+    .container{
         grid-template-areas: 
         "H H H H"
         "T T T T"
@@ -341,21 +341,21 @@ h4{
         "F F F F";
     }
 
-    .Aside{
+    .aside{
         min-height: 40vh;
         flex-direction: row;
         justify-content: center;
     }
 
-    .ExtraContent{
+    .extraContent{
         margin: 20px;
     }
 
-    .AbrirMenu, .CerrarMenu{
+    .openMenu, .closeMenu{
         display: block;
     }
     
-    .Nav{
+    .nav{
         align-items: end;
         background-color: black;
         border-radius: 80px 0 0 80px;
@@ -373,52 +373,52 @@ h4{
         width: fit-content;
     }
 
-    .NavList{
+    .navList{
         align-items: end;
         flex-direction: column;
         z-index: 1;
     }
 
-    .NavList li a{
+    .navList li a{
         color: white;
     }
 
-    .NavList li a:hover{
+    .navList li a:hover{
         text-shadow: 2px 2px 10px white;
     }
 
-    .Nav.Visible{
+    .nav.visible{
         opacity: 1;
         visibility: visible;
     }
 
-    .HiddenAll{
+    .hiddenAll{
         z-index: -1;
     }
 
-    .Card{
+    .card{
         min-width: 25vw;
         min-height: 40vh;
     }
 }
 
 @media screen and (max-width: 840px){
-    .Card{
+    .card{
         min-width: 40vw;
     }
 
-    .ExtraContent{
+    .extraContent{
         width: 40%;
     }
 }
 
 @media screen and (max-width: 600px){
-    .Card{
+    .card{
         min-width: 60vw;
         min-height: 40vh;
     }
 
-    .ExtraContent{
+    .extraContent{
         width: 50%;
     }
 }
