@@ -13,7 +13,7 @@ const aside = document.querySelector(".aside");
 const footer = document.querySelector(".footer");
 
 
- open.addEventListener("click", () => {
+open.addEventListener("click", () => {
     nav.classList.add("visible");
     
     motivation.classList.add("hiddenAll");
