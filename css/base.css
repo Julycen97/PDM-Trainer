@@ -38,8 +38,10 @@ h3{
 }
 
 h4{
-    font-size: 1.5rem;
-    -webkit-text-stroke: 1.5px black;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    margin-bottom: 10px;
 }
 
 /* SECTION'S CLASSES */
@@ -220,6 +222,38 @@ h4{
     background-image: url("../assets/images/Entrenamiento/personalizado-vip.jpg");
 }
 
+.containerCards #oatmealOmelette{
+    background-image: url("../assets/images/Recetas/tortilla-de-avena.png");
+}
+
+.containerCards #beaten{
+    background-image: url("../assets/images/Recetas/batido-detox.jpg");
+}
+
+.containerCards #pizza{
+    background-image: url("../assets/images/Recetas/pizza-sin-harina.png");
+}
+
+.containerCards #tacos{
+    background-image: url("../assets/images/Recetas/tacos-crocantes.jpg");
+}
+
+.containerCards #brownie{
+    background-image: url("../assets/images/Recetas/brownie-saludable.png");
+}
+
+.containerCards #training{
+    background-image: url("../assets/images/Tips/tips-entrenamientos.jpg");
+}
+
+.containerCards #feeding{
+    background-image: url("../assets/images/Tips/tips-alimentacion.jpg");
+}
+
+.containerCards #habits{
+    background-image: url("../assets/images/Tips/tips-habitos.jpeg");
+}
+
 /* ASIDE */
 .extraContent{
     border: 1px solid black;
@@ -278,7 +312,7 @@ h4{
 }
 
 .imgFooter img{
-    width: 80%;
+    width: 100%;
     border-radius: 15px;
 }
 
