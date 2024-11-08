@@ -44,6 +44,11 @@ h4{
     margin-bottom: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* SECTION'S CLASSES */
 .header{
     align-items: center;
@@ -92,7 +97,7 @@ h4{
 }
 
 .footer{
-    background: linear-gradient(to top, black, black, white);
+    background: linear-gradient(to top, black, black, black, white);
     grid-area: F;
     min-height: 20vh;
 }
@@ -295,6 +300,7 @@ h4{
 }
 
 .socialMedia a{
+    margin-top: 10px;
     display: flow-root;
     transition: transform 200ms ease-in-out;
 }
@@ -315,13 +321,21 @@ h4{
     width: 7vw;
 }
 
-
 /* OWNER */
 .Owner{
     margin: auto;
     padding-bottom: 10px;
     text-align: center;
     width: 95vw;
+}
+
+.imgFooter{
+    width: 90%;
+    background-color: black;
+}
+
+.imgFooter img{
+    width: 80%;
 }
 
 /* MEDIA QUERIES */
@@ -427,7 +441,7 @@ h4{
     .card{
         border-radius: 40%;
         min-width: 40vw;
-        min-height: 30vh;
+        min-height: 40vh;
     }
 
     .extraContent{
@@ -437,6 +451,10 @@ h4{
     .motivation{
         min-height: 40vh;
     }
+
+    .socialMedia a i{
+        font-size: 3em;
+    }    
 }
 
 @media screen and (max-width: 500px){
