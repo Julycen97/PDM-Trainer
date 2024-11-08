@@ -92,7 +92,7 @@ h4{
 }
 
 .footer{
-    background-color: gray;
+    background: linear-gradient(to top, black, black, white);
     grid-area: F;
     min-height: 20vh;
 }
@@ -286,35 +286,35 @@ h4{
 
 .socialMedia div:not(div:first-child){
     padding-bottom: 20px;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 10vh;
 }
 
 .socialMedia a{
     display: flow-root;
+    transition: transform 200ms ease-in-out;
+}
+
+.socialMedia a:hover{
+    transform: scale(1.2);
+}
+
+.socialMedia a i{
+    color: white;
+    font-size: 4em;
 }
 
 .socialMediaContact{
     max-width: 7em;
-    mix-blend-mode: multiply;
-    filter: brightness(1.1);
     padding: 0;
     transition: transform 300ms ease-in-out;
     width: 7vw;
 }
 
-.socialMediaContact:hover{
-    transform: scale(1.1);
-}
-
-.imgFooter{
-    margin: 0;
-    padding: 10px;
-    min-width: 70vw;
-}
-
-.imgFooter img{
-    width: 100%;
-    border-radius: 15px;
-}
 
 /* OWNER */
 .Owner{
@@ -425,8 +425,9 @@ h4{
     }
 
     .card{
-        min-width: 60vw;
-        min-height: 40vh;
+        border-radius: 40%;
+        min-width: 40vw;
+        min-height: 30vh;
     }
 
     .extraContent{
@@ -438,7 +439,7 @@ h4{
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .tittle h1{
         font-size: 2.5em;
     }
