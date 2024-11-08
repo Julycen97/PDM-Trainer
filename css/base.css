@@ -9,19 +9,22 @@ html{
 }
 
 body{
-    color: whitesmoke;
+    color: white;
 }
 
 h1{
-    color: darkmagenta;
+    background: linear-gradient(to bottom, magenta, greenyellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 4em;
     margin: 0;
     padding: 0;
-    transition: 200ms;
+    transition: background-color 200ms ease;
 }
 
 h1:hover{
-    color: yellowgreen;
+    background: linear-gradient(to bottom, greenyellow, magenta);
+    background-clip: text;
 }
 
 h2{
@@ -42,7 +45,7 @@ h4{
 /* SECTION'S CLASSES */
 .header{
     align-items: center;
-    background-color: black;
+    background: linear-gradient(to bottom, black, black, white);
     display: flex;
     grid-area: H;
     height: fit-content;
@@ -78,7 +81,6 @@ h4{
 .aside{
     align-items: center;
     display: flex;
-    border-left: 2px solid black;
     flex-wrap: wrap;
     flex-direction: column;
     grid-area: A;
@@ -122,7 +124,7 @@ h4{
     color: white;
     font-size: 1.5em;
     text-decoration: none;
-    transition: 100ms;
+    transition: text-shadow 100ms ease-in-out, transform 100ms ease-in-out;
 }
 
 .navList li a:hover{
@@ -168,7 +170,7 @@ h4{
     margin: auto;
     justify-content: center;
     margin-bottom: 10px;
-    transition: 100ms;
+    transition: transform 100ms ease-in-out, box-shadow 100ms ease-in-out;
     background-size: cover;
     background-position: center;
 }
@@ -226,7 +228,7 @@ h4{
     text-align: center;
     max-width: 80%;
     margin: 30px 0 30px 0;
-    transition: 100ms;
+    transition: transform 100ms ease-in-out, box-shadow 100ms ease-in-out, background-color 100ms ease-in-out;
 }
 
 .extraContent:hover{
@@ -261,12 +263,23 @@ h4{
     mix-blend-mode: multiply;
     filter: brightness(1.1);
     padding: 0;
-    transition: 300ms;
+    transition: transform 300ms ease-in-out;
     width: 7vw;
 }
 
 .socialMediaContact:hover{
     transform: scale(1.1);
+}
+
+.imgFooter{
+    margin: 0;
+    padding: 10px;
+    min-width: 70vw;
+}
+
+.imgFooter img{
+    width: 80%;
+    border-radius: 15px;
 }
 
 /* OWNER */
@@ -364,6 +377,11 @@ h4{
 }
 
 @media screen and (max-width: 600px){
+    
+    .tittle h1{
+        font-size: 3em;
+    }
+
     .card{
         min-width: 60vw;
         min-height: 40vh;
@@ -379,8 +397,8 @@ h4{
 }
 
 @media screen and (max-width: 450px){
-    h1{
-        font-size: 2.3em;
+    .tittle h1{
+        font-size: 2.2em;
     }
 
     .motivation{
@@ -388,7 +406,7 @@ h4{
     }
 
     .card{
-        border-radius: 50%;
+        border-radius: 40%;
         min-width: 80vw;
     }
 
