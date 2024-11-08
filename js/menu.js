@@ -33,17 +33,37 @@ close.addEventListener("click", () => {
 
 itemA.addEventListener("click", () => {
   nav.classList.remove("visible");
+
+  motivation.classList.remove("hiddenAll");
+  main.classList.remove("hiddenAll");
+  aside.classList.remove("hiddenAll");
+  footer.classList.remove("hiddenAll");
 })
 
 itemB.addEventListener("click", () => {
   nav.classList.remove("visible");
+
+  motivation.classList.remove("hiddenAll");
+  main.classList.remove("hiddenAll");
+  aside.classList.remove("hiddenAll");
+  footer.classList.remove("hiddenAll");
 })
 
 itemC.addEventListener("click", () => {
   nav.classList.remove("visible");
+
+  motivation.classList.remove("hiddenAll");
+  main.classList.remove("hiddenAll");
+  aside.classList.remove("hiddenAll");
+  footer.classList.remove("hiddenAll");
 })
 
 itemD.addEventListener("click", () => {
   nav.classList.remove("visible");
+
+  motivation.classList.remove("hiddenAll");
+  main.classList.remove("hiddenAll");
+  aside.classList.remove("hiddenAll");
+  footer.classList.remove("hiddenAll");
 })
 
