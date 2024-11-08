@@ -2,10 +2,10 @@ const nav = document.querySelector("#nav");
 const open = document.querySelector("#open");
 const close = document.querySelector("#close");
 
-const itemA = document.querySelector("#planes");;
-const itemB = document.querySelector("#recipes");;
-const itemC = document.querySelector("#tips");;
-const itemD = document.querySelector("#contact");;
+const itemA = document.querySelector("#planes");
+const itemB = document.querySelector("#recipes");
+const itemC = document.querySelector("#tips");
+const itemD = document.querySelector("#contact");
 
 const motivation = document.querySelector(".motivation");
 const main = document.querySelector(".main");
