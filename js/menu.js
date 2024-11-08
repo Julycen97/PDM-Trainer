@@ -3,8 +3,8 @@ const open = document.querySelector("#open");
 const close = document.querySelector("#close");
 
 const itemA = document.querySelector("#planes");;
-const itemB = document.querySelector("#product");;
-const itemC = document.querySelector("#opinion");;
+const itemB = document.querySelector("#recipes");;
+const itemC = document.querySelector("#tips");;
 const itemD = document.querySelector("#contact");;
 
 const motivation = document.querySelector(".motivation");
