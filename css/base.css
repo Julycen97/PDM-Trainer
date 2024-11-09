@@ -465,7 +465,6 @@ i{
 }
 
 @media screen and (max-width: 600px){
-    
     .tittle h1{
         font-size: 3em;
     }
@@ -499,6 +498,10 @@ i{
 
     h4{
         font-size: 1.2em;
+    }
+
+    .aside{
+        padding: 30px 0 30px 0;
     }
 
     .card{
