@@ -465,8 +465,17 @@ i{
 }
 
 @media screen and (max-width: 815px){
+    .motivation{
+        min-height: fit-content;
+    }
+
+    .vidMotivation{
+        height: 40vh;
+    }
+    
     .card{
         min-width: 40vw;
+        min-height: 30vh;
     }
 
     .extraContent{
@@ -489,15 +498,11 @@ i{
 
     .card{
         min-width: 40vw;
-        min-height: 30vh;
+        min-height: 20vh;
     }
 
     .extraContent{
         width: 40%;
-    }
-
-    .motivation{
-        min-height: 40vh;
     }
 
     .socialMedia a i{
@@ -506,6 +511,10 @@ i{
 }
 
 @media screen and (max-width: 500px){
+    .header{
+        min-height: 20vh;
+    }
+
     .tittle h1{
         font-size: 2.5em;
     }
@@ -518,13 +527,23 @@ i{
         padding: 30px 0 30px 0;
     }
 
-    .card{
-        min-width: 40vw;
-        min-height: 25vh;
-    }
-
     .openMenu, .closeMenu{
         width: 3em;
         height: 3em;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .card{
+        min-width: 40vw;
+        min-height: 20vh;
+    }
+
+    .motivation{
+        min-height: fit-content;
+    }
+
+    .vidMotivation{
+        height: 25vh;
     }
 }
